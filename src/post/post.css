@@ -2,7 +2,12 @@
        .wrapper{
             width: 100%;
             padding: 0 10px;
+            position: relative;
      }
+}
+
+.wrapper{
+    position: relative;
 }
 
 .list-group{
@@ -56,4 +61,10 @@ span{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.delete{
+    position: absolute;
+    top:-9px;
+    right:0;
 }

@@ -67,6 +67,9 @@ class Post extends Component {
         const {post} = this.state
         return (
             <div className="wrapper">
+                <button type="button" className="delete btn btn-secondary mt-3" onClick={this.onDelete}>
+                    Delete
+                </button>
                 <ul className="list-group">
                     <Link to="/post">
                         <FontAwesome
@@ -77,9 +80,6 @@ class Post extends Component {
                     </Link>
                     <Item post={post}/>  
                 </ul>
-                <button type="button" className="delete btn btn-secondary mt-3" onClick={this.onDelete}>
-                    Delete
-                </button>
             </div>
         )
     }
